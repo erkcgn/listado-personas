@@ -1,30 +1,19 @@
-<form class="row g-3">
-    <div class="col-auto">
-      <label for="nombre" class="visually-hidden">Nombre</label>
-      <input
-        type="text"
-        name="nombre"
-        id="nombre"
-        placeholder="Nombre"
-        class="form-control"
-        #nombreInput
-      />
-    </div>
-    <div class="col-auto">
-      <label for="apellido" class="visually-hidden">Apellido</label>
-      <input
-        type="text"
-        name="apellido"
-        id="apellido"
-        placeholder="Apellido"
-        class="form-control"
-        #apellidoInput
-      />
-    </div>
-    <div class="col">
-      <button type="submint" class="btn btn-primary"
-       (click)="agregarPersona()">
-        Agregar
-      </button>
-    </div>
-  </form>
+<form class="item">
+  <input
+    type="text"
+    name="nombre"
+    id="nombre"
+    placeholder="Nombre"
+    [(ngModel)]="nombreInput"
+  />
+
+  <input
+    type="text"
+    name="apellido"
+    id="apellido"
+    placeholder="Apellido"
+    [(ngModel)]="apellidoInput"
+  />
+
+  <button type="submint" (click)="agregarPersona()">+</button>
+</form>
