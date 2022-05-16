@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import { initializeApp } from 'firebase/app';
 import * as firebase from 'firebase/compat/app';
-import { getDatabase } from "firebase/database";
+import { getDatabase } from "firebase/database"; // agregando esto carga y permite inspeccionar
 
 const database = getDatabase();
 
