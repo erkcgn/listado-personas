@@ -2,8 +2,7 @@ import { Component, OnInit } from '@angular/core';
 // import { initializeApp } from 'firebase/app';
 import * as firebase from 'firebase/compat/app';
 import { getDatabase } from "firebase/database"; // agregando esto carga y permite inspeccionar
-
-const database = getDatabase();
+//const database = getDatabase();
 
 @Component({
   selector: 'app-root',
@@ -20,6 +19,7 @@ export class AppComponent implements OnInit{
         apiKey: "AIzaSyC6mve6u1SM43jWXO8sMfhRY8WAw5oK5G8",
         authDomain: "listado-personas-69ddc.firebaseapp.com"
       });
+      
 
     // const firebaseConfig = {
     //   apiKey: "AIzaSyC6mve6u1SM43jWXO8sMfhRY8WAw5oK5G8",
